@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dojo Sport News Network</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="live-scores">
+        <div class="ls-title">
+          <h2>Live Scores</h2>
+        </div>
+        <div class="games">
+          <div class="game">
+            <p>SJC Ninjas - 314</p>
+            <p>NS Pirates - 159</p>
+          </div>
+          <div class="game">
+            <p>CHI Samurai - 0</p>
+            <p>TUL Wizards - 0</p>
+          </div>
+          <div class="game">
+            <p>BOS Hackers - 13</p>
+            <p>TYO Youkai - 37</p>
+          </div>
+          <div class="game">
+            <p>BOI Knights - 5</p>
+            <p>SEA Sea Lions - 11</p>
+          </div>
+        </div>
+      </div>
+      <div class="nav-bar">
+        <div class="nav-title">
+          <h1>DSNN</h1>
+        </div>
+        <div class="nav-links">
+          <a href="#">Football</a>
+          <a href="#">Basketball</a>
+          <a href="#">Baseball</a>
+          <a href="#">Soccer</a>
+          <a href="#">More...</a>
+        </div>
+        <div class="search-bar">
+          <img src="assets/search-light.png" alt="Search Icon" />
+          <img src="assets/hamburger-light.png" alt="Menu Icon" />
+          <img src="assets/user-circle-light.png" alt="Profile Picture" />
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="left-side">
+          <div class="stories">
+            <h3>Top Stories</h3>
+            <hr />
+            <div class="stories-links">
+              <a href="#">Ninjas up big in 5th</a>
+              <a href="#">Best sport cities</a>
+              <a href="#">Choi joins Hall of Fame</a>
+              <a href="#">Tournament underway</a>
+              <a href="#">Samurai at Wizards...</a>
+            </div>
+          </div>
+          <div class="cust-dssn">
+            <h5>Customize your DSNN</h5>
+            <div>
+              <button id="in">Sign In</button>
+              <button id="up">Sign Up</button>
+            </div>
+          </div>
+          <div class="subscribe">
+            <h5>Never miss a play</h5>
+            <button id="sub" onclick="subscribe('subscribe')">Subscribe</button>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="right-top">
+            <ul>
+              <li>
+                <span class="live">Live</span>
+                <span>Ninjas Leading Pirates</span>
+              </li>
+            </ul>
+            <div class="r-t-content">
+              <div class="home">
+                <img src="assets/sjc-ninjas.png" alt="San Jose Ninjas logo" />
+                <p class="city">San Jose</p>
+                <span class="nickname">Ninjas</span>
+                <p class="win-lose">(10 W - 3 L)</p>
+                <span id="home-score" onclick="increaseScore(this)">314</span>
+              </div>
+              <div class="vs">
+                <span>VS</span>
+                <div>
+                  <p>0:13 remaining</p>
+                  <p>5th period</p>
+                </div>
+              </div>
+              <div class="away">
+                <img
+                  src="assets/ns-pirates.png"
+                  alt="Nova Scotia Pirates logo"
+                />
+                <p class="city">Nova Scotia</p>
+                <span class="nickname">Pirates</span>
+                <p class="win-lose">(12 W - 2 L)</p>
+                <span id="away-score" onclick="increaseScore(this)">159</span>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="footer">
+            <p>
+              A conservative match between the two top-performing sides in the
+              Central League Division with a number 1 seed at stake...
+              <a href="#">get live updates</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

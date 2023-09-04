@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: black;
+}
+.container {
+  width: 100%;
+}
+.main-content {
+  margin: 0 auto;
+  height: auto;
+  background-color: #dddddd;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+.live-scores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.games {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: cursive;
+  font-size: small;
+  font-weight: bold;
+  width: auto;
+}
+.game {
+  margin: 10px 30px;
+}
+.nav-bar {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-title {
+  background-color: red;
+  color: white;
+  font-style: italic;
+  font-size: large;
+  transform: skewX(-20deg);
+  padding: 0px 10px;
+}
+.nav-bar a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 20px;
+  font-size: medium;
+  font-weight: bold;
+}
+.search-bar {
+  margin-left: 80px;
+}
+.nav-bar img {
+  width: 30px;
+  margin: 0px 5px;
+}
+.left-side {
+  width: 20%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 10px 0px;
+}
+hr {
+  border-top: 2px solid #333;
+  width: 85%;
+  color: #333;
+  text-align: center;
+  margin-left: 5%;
+}
+.stories,
+.cust-dssn,
+.subscribe {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.stories h3 {
+  margin: 10px;
+}
+.stories-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.stories-links a {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+}
+.cust-dssn button,
+.subscribe button,
+.cust-dssn h5,
+.subscribe h5 {
+  margin: 10px;
+}
+#in,
+#up {
+  width: 70px;
+  height: 30px;
+  padding: 2px;
+  font-family: cursive;
+  font-size: small;
+  font-weight: bold;
+  box-shadow: 10px 5px 5px black;
+}
+#in {
+  background-color: #2a77dc;
+  color: white;
+}
+#up {
+  background-color: white;
+}
+#sub {
+  width: 170px;
+  height: 30px;
+  padding: 2px;
+  font-family: cursive;
+  font-size: small;
+  font-weight: bold;
+  box-shadow: 10px 5px 5px black;
+  background-color: #ffe599;
+}
+.right-side {
+  width: 45%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  margin: 20px 0px;
+}
+.right-top {
+  display: flex;
+  flex-direction: column;
+}
+.live {
+  color: red;
+  margin-right: 30px;
+}
+.r-t-content {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.r-t-content img {
+  width: 150px;
+}
+ul {
+  margin: 20px 60px;
+  font-size: 30px;
+  list-style: none;
+}
+li {
+  font-size: 35px;
+  font-weight: bold;
+}
+li::before {
+  content: "• ";
+  font-size: 50px;
+  color: red;
+  display: inline;
+  width: 1em;
+  margin-left: -0.75em;
+}
+.city {
+  font-size: 20px;
+  font-family: cursive;
+}
+.win-lose {
+  font-size: 13px;
+  font-family: cursive;
+}
+.nickname {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: cursive;
+}
+#home-score,
+#away-score {
+  font-size: 50px;
+  font-weight: bold;
+}
+.vs span {
+  font-size: 25px;
+  font-weight: bold;
+}
+.home,
+.away {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+.vs {
+  height: 200px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer {
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 20px;
+  height: auto;
+}
+.home .nickname {
+  color: #109b9d;
+}
+.away .nickname {
+  color: #d21034;
+}
